@@ -14,19 +14,7 @@ interface PreviewProps {
 
 const links = [
   {
-    url: 'https://www.instagram.com/xaynhq/',
-    name: 'Instagram',
-    // Important! Use the asset link which is hosted on our domain
-    iconSrc: 'https://xayn.com/instagram-icon',
-  },
-  {
-    url: 'https://twitter.com/XaynHQ',
-    name: 'Twitter',
-    // Important! Use the asset link which is hosted on our domain
-    iconSrc: 'https://xayn.com/twitter-icon',
-  },
-  {
-    url: 'https://www.linkedin.com/company/xaynhq',
+    url: 'https://www.linkedin.com/company/xaynag',
     name: 'LinkedIn',
     // Important! Use the asset link which is hosted on our domain
     iconSrc: 'https://xayn.com/linkedin-icon',
@@ -66,9 +54,9 @@ const Preview: React.FC<PreviewProps> = ({
                 <b>{labels.regards},</b>
               </p>
               <p style={{ ...defaultStyle, marginBottom: 10 }}>
-                <b style={{ color: '#22A186' }}>{name}</b>
+                <b style={{ color: '#766DAD' }}>{name}</b>
                 <br />
-                <span style={{ color: '#787878' }}>{role}</span>
+                <span style={{ color: '#766DAD' }}>{role}</span>
               </p>
               <div style={{ ...defaultStyle, marginBottom: 0 }}>
                 <div>
@@ -114,7 +102,7 @@ const Preview: React.FC<PreviewProps> = ({
                   <>
                     <span>
                       <b>{labels.email}</b>:{' '}
-                      <a href={`mailto:${email}`} style={{ color: '#E51674' }}>
+                      <a href={`mailto:${email}`} style={{ color: '#3E4645' }}>
                         {email}
                       </a>
                     </span>
@@ -127,7 +115,7 @@ const Preview: React.FC<PreviewProps> = ({
                     href="https://xayn.com/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    style={{ color: '#E51674' }}
+                    style={{ color: '#3E4645' }}
                   >
                     xayn.com
                   </a>
