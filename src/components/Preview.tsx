@@ -12,13 +12,13 @@ interface PreviewProps {
   email: string;
 }
 
-const links = [
-  {
-    url: 'https://www.linkedin.com/company/xaynag',
-    name: 'LinkedIn',
-    // Important! Use the asset link which is hosted on our domain
-    iconSrc: 'https://xayn.com/linkedin-icon',
-  },
+const links: any[] = [
+  // {
+  //   url: 'https://www.linkedin.com/company/xaynag',
+  //   name: 'LinkedIn',
+  //   // Important! Use the asset link which is hosted on our domain
+  //   iconSrc: 'https://xayn.com/linkedin-icon',
+  // },
 ];
 
 const Preview: React.FC<PreviewProps> = ({
@@ -119,23 +119,39 @@ const Preview: React.FC<PreviewProps> = ({
                   >
                     xayn.com
                   </a>
+                  <br />
                 </span>
-                <br />
-                <br />
-                <div>
-                  {links.map((link) => (
-                    <span key={link.name}>
-                      <a
-                        href={link.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <img src={link.iconSrc} alt={link.name} />
-                      </a>
-                      &nbsp;
-                    </span>
-                  ))}
-                </div>
+                <span>
+                  <b>{info.linkedin}</b>:{' '}
+                  <a
+                    href="https://www.linkedin.com/company/xaynag"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: '#3E4645' }}
+                  >
+                    linkedin.com/company/xaynag
+                  </a>
+                </span>
+                {links.length > 0 && (
+                  <>
+                    <br />
+                    <br />
+                    <div>
+                      {links.map((link) => (
+                        <span key={link.name}>
+                          <a
+                            href={link.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <img src={link.iconSrc} alt={link.name} />
+                          </a>
+                          &nbsp;
+                        </span>
+                      ))}
+                    </div>
+                  </>
+                )}
               </p>
               <br />
               <p style={footerStyle}>
