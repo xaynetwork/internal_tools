@@ -91,6 +91,7 @@ const Preview: React.FC<PreviewProps> = ({
                 <br />
                 <span>{`${labels.country}`}</span>
               </p>
+              <br />
               <p style={defaultStyle}>
                 {phone && (
                   <>
