@@ -88,6 +88,8 @@ const Preview: React.FC<PreviewProps> = ({
                 <span>{info.street}</span>
                 <br />
                 <span>{`${info.postal} ${info.city}`}</span>
+                <br />
+                <span>{`${labels.country}`}</span>
               </p>
               <p style={defaultStyle}>
                 {phone && (
