@@ -14,7 +14,7 @@ const Signature: React.FC<RouteComponentProps> = () => {
   const [formValues, setFormValues] = useState({
     name: '',
     role: '',
-    phone: '+49 (0) 30 896 3199 0',
+    phone: '',
     email: '',
   });
 
