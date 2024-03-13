@@ -85,6 +85,12 @@ const Preview: React.FC<PreviewProps> = ({
               <p style={defaultStyle}>
                 <span>{info.name}</span>
                 <br />
+		{info.co && (
+		  <>
+                    <span>{info.co}</span>
+                    <br />
+		  </>
+		)}
                 <span>{info.street}</span>
                 <br />
                 <span>{`${info.postal} ${info.city}`}</span>
