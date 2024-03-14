@@ -128,7 +128,7 @@ const Preview: React.FC<PreviewProps> = ({
                   >
                     xayn.com
                   </a>
-		  {' '}
+		  {' / '}
                   <a
                     href="https://www.noxtua.ai/"
                     target="_blank"
