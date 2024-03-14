@@ -128,6 +128,15 @@ const Preview: React.FC<PreviewProps> = ({
                   >
                     xayn.com
                   </a>
+		  {' '}
+                  <a
+                    href="https://www.noxtua.ai/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ color: '#3E4645' }}
+                  >
+                    www.noxtua.ai
+                  </a>
                   <br />
                 </span>
                 <span>
