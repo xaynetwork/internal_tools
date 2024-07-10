@@ -70,7 +70,7 @@ const Preview: React.FC<PreviewProps> = ({
                   >
                     <img
                       // Important! Use the asset link which is hosted on our domain
-                      src="https://xayn.com/discover-image"
+                      src="https://i.imgur.com/9KVPQDk.png"
                       alt="Xayn"
                       style={{
                         maxWidth: 325,
